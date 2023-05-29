@@ -1,0 +1,32 @@
+6.Write a program to Calculate power of number using tail recursion in C#
+class Recursion
+{
+    public static int Power(int number, int power)
+    {
+        if (power == 0)
+        {
+            return 1;
+        }
+        else
+        {
+            return number*Power(number,power-1);
+        }
+    }
+
+    public static void Main()
+    {
+        int num     = 0;
+        int pow     = 0;
+        int result  = 0;
+
+        Console.Write("Enter the number: ");
+        num = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter the power: ");
+        pow = int.Parse(Console.ReadLine());
+
+        result = Power(num, pow);
+
+        Console.WriteLine("Result : "+result);
+    }
+}
