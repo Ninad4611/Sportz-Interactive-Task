@@ -1,0 +1,13 @@
+7.Write a program to iterate through Enum values in C#?
+public enum Colors
+{
+red,
+blue,
+green,
+yellow
+}
+
+foreach (string s in Enum.GetNames(typeof(Colors)))
+{
+    Console.WriteLine(s);
+}
