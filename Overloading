@@ -1,0 +1,24 @@
+8.Write an over loaded function in c# to calculate an area of a square or a rectangle
+namespace MyCompiler 
+{
+    class area
+    {
+        public double square(double a)
+        {
+            return(a *= a);
+        }
+        public double rectangle (double l,double b)
+        {
+            return(l*b);
+        }
+    }
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            area obj = new area();
+            Console.WriteLine("Area of Square = "+obj.square(10));
+            Console.WriteLine("Area of Rectangle = "+obj.rectangle(4,5));
+        }
+    }
+}
